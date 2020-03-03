@@ -1,0 +1,14 @@
+git init
+
+git add .
+
+git commit -m 'msg'
+
+git remote add origin 'repo link'
+
+git config --global user.email 'murtaza.huzaifa2@gmail.com'
+git config --global user.name 'murtazahuzaifa'
+
+git push origin master
+
+git clone 'repo link'

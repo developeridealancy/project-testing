@@ -1,0 +1,10 @@
+{
+  "params":
+  {
+    "window_width" : "500",
+    "window_height" : "500",
+    "application name" : "ERP system - Powered by SyntaxFit",
+    "background color" : "white",
+    "database_path" : "E:\\Idealancy Project\\project 4 product entry system"
+  }
+}
