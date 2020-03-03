@@ -115,11 +115,11 @@ class Product_entry():
         tk.Label(frame, text=f'{name}', font='arial 12 bold').grid(row=0, column=0,padx=2)
 
         self.w_seller1 = tk.StringVar()
-        tk.Entry(frame, font='arial 12', bg='light grey', width='8',textvariable=self.w_seller1).grid(row=0, column=1,padx=2)
+        tk.Entry(frame, font='arial 12', bg='light grey', width='9',textvariable=self.w_seller1).grid(row=0, column=1,padx=2)
         self.w_seller2 = tk.StringVar()
-        tk.Entry(frame, font='arial 12', bg='light grey', width='8',textvariable=self.w_seller2).grid(row=0, column=2,padx=2)
+        tk.Entry(frame, font='arial 12', bg='light grey', width='9',textvariable=self.w_seller2).grid(row=0, column=2,padx=2)
         self.w_seller3 = tk.StringVar()
-        tk.Entry(frame, font='arial 12', bg='light grey', width='8',textvariable=self.w_seller3).grid(row=0, column=3,padx=2)
+        tk.Entry(frame, font='arial 12', bg='light grey', width='9',textvariable=self.w_seller3).grid(row=0, column=3,padx=2)
         self.w_seller_self = tk.IntVar()
         tk.Checkbutton(frame, text='self', font='arial 12 bold',variable=self.w_seller_self).grid(row=0, column=4)
 
@@ -139,7 +139,6 @@ class Product_entry():
         whole_seller3 = self.w_seller3.get()
         self_seller = self.w_seller_self.get()
 
-
         # os.mkdir(f"{database_path}\{product_dir_name}")
         #
         # image_path = self.img_address.get()
@@ -153,6 +152,12 @@ class Product_entry():
         os.system("git commit -m 'a file added'")
         # print(read)
 
+
+    def push_data_to_server(self):
+        os.system("git add .")
+        os.system("git commit -m ")
+        os.system("")
+        os.system("")
 
 
     def get_product_data(self, file_path, file_name):
